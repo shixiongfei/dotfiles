@@ -13,6 +13,9 @@ Plug 'jmcantrell/vim-virtualenv'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'epeli/slimux'
+Plug 'kien/ctrlp.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 filetype plugin indent on   " required!
 call plug#end()
@@ -77,6 +80,12 @@ let g:slimux_pane_format = '#{pane_id}:'
 map <C-c><C-c> :SlimuxREPLSendLine<CR>
 vmap <C-c><C-c> :SlimuxREPLSendSelection<CR>
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:UltiSnipsExpandTrigger = '<c-\>'
+let g:UltiSnipsUsePythonVersion = 3
+
 syntax on               " syntax highlighting
 colorscheme molokai
 
@@ -85,6 +94,7 @@ set history=100         " keep 100 lines of history
 set ruler               " show the cursor position
 set hlsearch            " highlight the last searched term
 set backspace=indent,eol,start  " Allow backspaceing over autoindent, line breaks, starts of insert
+set smarttab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -95,6 +105,10 @@ set smartindent
 set showmatch
 set number
 set numberwidth=4       " Width of the line number column
+
+set nobackup
+set nowb
+set noswapfile
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
