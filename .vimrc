@@ -34,8 +34,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 nnoremap <Leader>w :w<CR>   " write file
 nnoremap <Leader>q :q<CR>   " quit vim
+nnoremap <Leader>wq :wq<CR> " write & quit
 nnoremap <Leader>n :bn<CR>  " airline tabline next
-nnoremap <Leader>p :bp<CR>  " airline tabline prev
+nnoremap <Leader>v :bp<CR>  " airline tabline prev
+
+nmap <Leader>p "+gp     " Past from clipboard
+vmap <Leader>y "+y      " Copy to clipboard
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
