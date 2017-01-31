@@ -86,6 +86,20 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
 
+# where proxy
+proxy () {
+    export https_proxy=http://127.0.0.1:9090
+    export http_proxy=http://127.0.0.1:9090
+    echo "HTTP(S) Proxy on"
+}
+
+# where noproxy
+noproxy () {
+    unset http_proxy
+    unset https_proxy
+    echo "HTTP(S) Proxy off"
+}
+
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
