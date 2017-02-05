@@ -85,7 +85,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
-
+export PATH="/usr/local/opt/apr-util/bin:$PATH"
 # where proxy
 proxy () {
     export https_proxy=http://127.0.0.1:9090
