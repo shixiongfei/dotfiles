@@ -84,8 +84,13 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/apr-util/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/net-snmp/bin:$PATH"
+export PATH="/usr/local/opt/net-snmp/sbin:$PATH"
+
 # where proxy
 proxy () {
     export https_proxy=http://127.0.0.1:9090
