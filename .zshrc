@@ -90,6 +90,7 @@ export PATH="/usr/local/opt/apr-util/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/sbin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 # where proxy
 proxy () {
