@@ -91,7 +91,7 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/sbin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="~/anaconda3/bin:$PATH"
+export PATH=~/anaconda3/bin:"$PATH"
 
 # where proxy
 proxy () {
