@@ -91,6 +91,7 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/sbin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="~/anaconda3/bin:$PATH"
 
 # where proxy
 proxy () {
@@ -106,9 +107,6 @@ noproxy () {
     echo "HTTP(S) Proxy off"
 }
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
 source $HOME/.homebrew-api-token
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
