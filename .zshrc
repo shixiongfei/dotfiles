@@ -100,6 +100,9 @@ proxy () {
     echo "HTTP(S) Proxy on"
 }
 
+# open proxy by default
+proxy
+
 # where noproxy
 noproxy () {
     unset http_proxy
