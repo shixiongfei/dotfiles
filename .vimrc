@@ -13,8 +13,6 @@ Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'epeli/slimux'
 Plug 'kien/ctrlp.vim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 
 filetype plugin indent on   " required!
 call plug#end()
@@ -85,9 +83,6 @@ vmap <C-c><C-c> :SlimuxREPLSendSelection<CR>
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-
-let g:UltiSnipsExpandTrigger = '<c-\>'
-let g:UltiSnipsUsePythonVersion = 3
 
 syntax on               " syntax highlighting
 colorscheme molokai
