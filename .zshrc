@@ -93,6 +93,7 @@ export PATH="/usr/local/opt/net-snmp/sbin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH=~/anaconda3/bin:"$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # where proxy
 proxy () {
