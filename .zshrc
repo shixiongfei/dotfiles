@@ -95,6 +95,8 @@ export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH=~/anaconda3/bin:"$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+
 # where proxy
 proxy () {
     export https_proxy=http://127.0.0.1:9090
