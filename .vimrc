@@ -13,6 +13,12 @@ Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'epeli/slimux'
 Plug 'kien/ctrlp.vim'
+Plug 'vim-erlang/vim-erlang-tags'
+Plug 'vim-erlang/vim-erlang-runtime'
+Plug 'vim-erlang/vim-erlang-omnicomplete'
+Plug 'vim-erlang/vim-erlang-compiler'
+
+Plug 'hzchirs/vim-material'
 
 filetype plugin indent on   " required!
 call plug#end()
@@ -24,6 +30,18 @@ call plug#end()
 " PlugStatus                            Check the status of plugins
 " PlugDiff                              Examine changes from the previous update and the pending changes
 " PlugSnapshot[!] [output path]         Generate script for restoring the current snapshot of the plugins
+
+set t_Co=256
+set background=dark
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+let base16colorspace=256  " Access colors present in 256 colorspace
+
+colorscheme vim-material
+let g:airline_theme='material'
 
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
@@ -85,7 +103,6 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 syntax on               " syntax highlighting
-colorscheme molokai
 
 set encoding=utf-8
 set history=100         " keep 100 lines of history
