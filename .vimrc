@@ -13,6 +13,7 @@ Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'epeli/slimux'
 Plug 'kien/ctrlp.vim'
+Plug 'tbastos/vim-lua'
 
 Plug 'hzchirs/vim-material'
 
