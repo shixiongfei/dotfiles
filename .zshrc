@@ -122,6 +122,5 @@ alias vi="vim"
 
 # eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
-eval `opam config env`
 if which luaver > /dev/null; then . `which luaver`; fi
 
