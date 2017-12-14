@@ -124,3 +124,6 @@ alias vi="vim"
 
 if which luaver > /dev/null; then . `which luaver`; fi
 
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
