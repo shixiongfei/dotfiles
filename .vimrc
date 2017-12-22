@@ -18,6 +18,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'wlangstroth/vim-racket'
+Plug 'bhurlow/vim-parinfer'
 Plug 'hzchirs/vim-material'
 
 filetype plugin indent on   " required!
