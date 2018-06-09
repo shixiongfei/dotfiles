@@ -13,12 +13,15 @@ Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'epeli/slimux'
 Plug 'kien/ctrlp.vim'
-Plug 'tbastos/vim-lua'
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'bhurlow/vim-parinfer'
 Plug 'hzchirs/vim-material'
+Plug 'othree/yajs.vim'
+Plug 'mxw/vim-jsx'
+Plug 'gavocanov/vim-js-indent'
+Plug 'justinj/vim-react-snippets'
 
 filetype plugin indent on   " required!
 call plug#end()
@@ -60,6 +63,8 @@ let g:rbpt_colorpairs = [
     \ ]
 let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:syntastic_javascript_checkers = ['eslint']
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
