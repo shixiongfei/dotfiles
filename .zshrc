@@ -95,6 +95,21 @@ export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
+# fix brew config warning.
+# https://hashrocket.com/blog/posts/keep-anaconda-from-constricting-your-homebrew-installs
+export SANS_ANACONDA=$PATH
+export PATH="/usr/local/miniconda3/bin:$SANS_ANACONDA"
+
+alias perseus="export PATH="\$SANS_ANACONDA
+alias medusa="export PATH="/usr/local/miniconda3/bin:\$PATH
+
+brew () {
+    perseus
+    command brew "$@"
+    medusa
+}
+# end
+
 # where proxy
 proxy () {
     export https_proxy=http://127.0.0.1:9090
