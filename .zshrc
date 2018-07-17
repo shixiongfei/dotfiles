@@ -137,5 +137,5 @@ alias vi="vim"
 # eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+source $(brew --prefix nvm)/nvm.sh
 
