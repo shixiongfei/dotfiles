@@ -22,6 +22,7 @@ Plug 'othree/yajs.vim'
 Plug 'mxw/vim-jsx'
 Plug 'gavocanov/vim-js-indent'
 Plug 'justinj/vim-react-snippets'
+Plug 'fsharp/vim-fsharp', { 'for': 'fsharp', 'do': 'make fsautocomplete', }
 
 filetype plugin indent on   " required!
 call plug#end()
