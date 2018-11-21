@@ -94,6 +94,7 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # fix brew config warning.
 # https://hashrocket.com/blog/posts/keep-anaconda-from-constricting-your-homebrew-installs
