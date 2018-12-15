@@ -41,7 +41,6 @@ values."
      ;; better-defaults
      common-lisp
      emacs-lisp
-     clojure
      csv
      ;; git
      ;; markdown
