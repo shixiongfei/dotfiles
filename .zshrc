@@ -140,3 +140,5 @@ alias vi="vim"
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 
+export GOPATH="$HOME/Codes/go"
+
