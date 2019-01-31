@@ -135,6 +135,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 alias ctags="`brew --prefix`/bin/ctags"
 alias vi="vim"
+alias libtoolize="glibtoolize"
 
 # eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
