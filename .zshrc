@@ -138,6 +138,6 @@ alias libtoolize="glibtoolize"
 
 # eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
+#export NVM_DIR="$HOME/.nvm"
+#source $(brew --prefix nvm)/nvm.sh
 
