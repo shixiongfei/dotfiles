@@ -51,6 +51,8 @@ This function should only modify configuration layer settings."
      common-lisp
      emacs-lisp
      csv
+     erlang
+     elixir
      git
      html
      (javascript :variables
