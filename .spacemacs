@@ -52,7 +52,6 @@ This function should only modify configuration layer settings."
      emacs-lisp
      csv
      erlang
-     elixir
      git
      html
      (javascript :variables
