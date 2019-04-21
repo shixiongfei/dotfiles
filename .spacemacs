@@ -49,6 +49,7 @@ This function should only modify configuration layer settings."
             c-c++-enable-google-style t
             c-c++-enable-google-newline t)
      emacs-lisp
+     racket
      scheme
      csv
      erlang
