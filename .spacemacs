@@ -48,8 +48,8 @@ This function should only modify configuration layer settings."
             c-c++-enable-clang-format-on-save t
             c-c++-enable-google-style t
             c-c++-enable-google-newline t)
-     common-lisp
      emacs-lisp
+     scheme
      csv
      erlang
      git
@@ -491,12 +491,8 @@ before packages are loaded."
   (setq-default custom-file "~/.spacemacs.custom")
   (when (file-exists-p custom-file)
     (load custom-file))
-  (cond
-    ((string-equal system-type "darwin")
-     (progn
-      (setq inferior-lisp-program "ccl64")))
-    (t (progn 
-        (setq inferior-lisp-program "sbcl"))))
+  (setq scheme-program-name "chez")
+  (setq geiser-chez-binary "chez")
   (global-company-mode)
   (add-hook 'prog-mode-hook #'fci-mode)    ;; Indicate fill column.
   )
