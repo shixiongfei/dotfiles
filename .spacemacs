@@ -49,6 +49,7 @@ This function should only modify configuration layer settings."
             c-c++-enable-google-style t
             c-c++-enable-google-newline t)
      emacs-lisp
+     scheme
      csv
      erlang
      git
@@ -490,6 +491,10 @@ before packages are loaded."
   (setq-default custom-file "~/.spacemacs.custom")
   (when (file-exists-p custom-file)
     (load custom-file))
+  (setq scheme-program-name "chez")
+  (when (string-equal system-type "darwin")
+    (setq geiser-chez-binary "chez"))
+  (setq geiser-active-implementations '(chez))
   (global-company-mode)
   (add-hook 'prog-mode-hook #'fci-mode)    ;; Indicate fill column.
   )
