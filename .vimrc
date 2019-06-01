@@ -17,6 +17,12 @@ Plug 'bhurlow/vim-parinfer'
 Plug 'hzchirs/vim-material'
 Plug 'othree/yajs.vim'
 Plug 'gavocanov/vim-js-indent'
+Plug 'tpope/vim-pathogen'
+Plug 'vim-erlang/vim-erlang-runtime'
+Plug 'vim-erlang/vim-erlang-compiler'
+Plug 'vim-erlang/vim-erlang-omnicomplete'
+Plug 'vim-erlang/vim-erlang-tags'
+Plug 'elixir-editors/vim-elixir'
 
 filetype plugin indent on   " required!
 call plug#end()
