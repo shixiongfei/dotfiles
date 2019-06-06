@@ -141,3 +141,5 @@ alias libtoolize="glibtoolize"
 #export NVM_DIR="$HOME/.nvm"
 #source $(brew --prefix nvm)/nvm.sh
 
+eval "$(rbenv init -)"
+
