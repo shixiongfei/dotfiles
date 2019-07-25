@@ -8,5 +8,6 @@ My dotfiles
     ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
     ln -s ~/.dotfiles/.pip ~/.pip
     ln -s ~/.dotfiles/.condarc ~/.condarc
+    ln -s ~/.dotfiles/.vimrc ~/.vimrc
     ln -s ~/.dotfiles/.SpaceVim.d ~/.SpaceVim.d
 
