@@ -32,8 +32,14 @@ call plug#end()
 set t_Co=256
 set background=dark
 
-if (has("termguicolors"))
-  set termguicolors
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+
+  if (has("termguicolors"))
+    set termguicolors
+  endif
 endif
 
 let base16colorspace=256                " Access colors present in 256 colorspace
