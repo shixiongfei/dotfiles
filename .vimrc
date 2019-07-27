@@ -1,6 +1,6 @@
 set nocompatible                        " This must be first, because it changes other options
 filetype off
-let mapleader="\<Space>"                " Set Leader Key
+let mapleader = "\<Space>"              " Set Leader Key
 
 " Note: install vim-plug if not present
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -25,8 +25,9 @@ Plug 'bhurlow/vim-parinfer'             " parinfer
 Plug 'cohama/lexima.vim'                " Auto close parentheses
 Plug 'SirVer/ultisnips'                 " The ultimate snippet solution for Vim
 Plug 'honza/vim-snippets'               " snippets
-Plug 'xavierd/clang_complete'           " C/C++
 Plug 'jpalardy/vim-slime'               " Slime for VIM
+Plug 'xavierd/clang_complete'           " C/C++
+Plug 'pangloss/vim-javascript'          " Javascript
 
 
 " PlugInstall [name ...] [#threads]     Install plugins
@@ -47,7 +48,7 @@ set background=dark
 
 if (empty($TMUX))
   if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
   endif
 
   if (has("termguicolors"))
@@ -55,12 +56,12 @@ if (empty($TMUX))
   endif
 endif
 
-let base16colorspace=256                " Access colors present in 256 colorspace
+let base16colorspace = 256              " Access colors present in 256 colorspace
 
 " setting for one dark theme & lightline
 colorscheme onedark
-let g:onedark_termcolors=256
-let g:onedark_terminal_italics=1
+let g:onedark_termcolors = 256
+let g:onedark_terminal_italics = 1
 
 let g:lightline = {
   \ 'colorscheme': 'onedark',
@@ -108,7 +109,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-autocmd StdinReadPre * let s:std_in=1
+autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -126,7 +127,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " RainBow Parentheses
-let g:rainbow_active=1
+let g:rainbow_active = 1
 
 " Syntax checking
 set statusline+=%#warningmsg#
@@ -138,23 +139,24 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name":"default", "target_pane":"{right-of}"}
+let g:slime_dont_ask_default = 1
+let g:slime_paste_file = "$HOME/.slime_paste"
 
 " C/C++
-let g:clang_auto_select=1
-let g:clang_complete_macros=1
-let g:clang_complete_patterns=1
-let g:clang_complete_copen=1
-"let g:clang_periodic_quickfix=1
-let g:clang_snippets=1
-let g:clang_snippets_engine='ultisnips'
-let g:clang_use_library=1
-let g:clang_library_path='/usr/local/opt/llvm/lib'
+let g:clang_auto_select = 1
+let g:clang_complete_macros = 1
+let g:clang_complete_patterns = 1
+let g:clang_complete_copen = 1
+"let g:clang_periodic_quickfix = 1
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'ultisnips'
+let g:clang_use_library = 1
+let g:clang_library_path = '/usr/local/opt/llvm/lib'
 
-" Slime
-let g:slime_target="tmux"
-let g:slime_default_config={"socket_name":"default", "target_pane":"{right-of}"}
-let g:slime_dont_ask_default=1
-let g:slime_paste_file="$HOME/.slime_paste"
-
-
+" Javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
 

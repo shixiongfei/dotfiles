@@ -100,21 +100,6 @@ export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 
-# fix brew config warning.
-# https://hashrocket.com/blog/posts/keep-anaconda-from-constricting-your-homebrew-installs
-export SANS_ANACONDA=$PATH
-export PATH="/usr/local/miniconda3/bin:$SANS_ANACONDA"
-
-alias perseus="export PATH="\$SANS_ANACONDA
-alias medusa="export PATH="/usr/local/miniconda3/bin:\$PATH
-
-brew () {
-    perseus
-    command brew "$@"
-    medusa
-}
-# end
-
 # where proxy
 proxy () {
     export https_proxy=http://127.0.0.1:9090
@@ -154,11 +139,6 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias vi="vim"
 alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
-
-# eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
-
-#export NVM_DIR="$HOME/.nvm"
-#source $(brew --prefix nvm)/nvm.sh
-
-#eval "$(rbenv init -)"
+alias python="python3"
+alias pip="pip3"
 
