@@ -16,12 +16,17 @@ Plug 'sheerun/vim-polyglot'             " improved syntax highlighting for vario
 Plug 'joshdick/onedark.vim'             " Atom One Dark Theme
 Plug 'itchyny/lightline.vim'            " Status Line
 Plug 'ctrlpvim/ctrlp.vim'               " Ctrl+P
+Plug 'tpope/vim-pathogen'               " Pathogen
+Plug 'scrooloose/syntastic'             " Syntax checking
 Plug 'scrooloose/nerdtree'              " NerdTree
 Plug 'Xuyuanp/nerdtree-git-plugin'      " NerdTree Git
 Plug 'luochen1990/rainbow'              " RainBow Parentheses
 Plug 'bhurlow/vim-parinfer'             " parinfer
 Plug 'cohama/lexima.vim'                " Auto close parentheses
+Plug 'SirVer/ultisnips'                 " The ultimate snippet solution for Vim
+Plug 'honza/vim-snippets'               " snippets
 Plug 'xavierd/clang_complete'           " C/C++
+Plug 'jpalardy/vim-slime'               " Slime for VIM
 
 
 " PlugInstall [name ...] [#threads]     Install plugins
@@ -62,6 +67,7 @@ let g:lightline = {
   \ }
 
 " setting for VIM
+execute pathogen#infect()
 syntax enable                           " syntax highlighting
 syntax on                               " syntax highlighting
 filetype on
@@ -122,13 +128,33 @@ let g:NERDTreeIndicatorMapCustom = {
 " RainBow Parentheses
 let g:rainbow_active=1
 
+" Syntax checking
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
 " C/C++
 let g:clang_auto_select=1
 let g:clang_complete_macros=1
 let g:clang_complete_patterns=1
 let g:clang_complete_copen=1
 "let g:clang_periodic_quickfix=1
+let g:clang_snippets=1
+let g:clang_snippets_engine='ultisnips'
 let g:clang_use_library=1
 let g:clang_library_path='/usr/local/opt/llvm/lib'
+
+" Slime
+let g:slime_target="tmux"
+let g:slime_default_config={"socket_name":"default", "target_pane":"{right-of}"}
+let g:slime_dont_ask_default=1
+let g:slime_paste_file="$HOME/.slime_paste"
+
 
 
