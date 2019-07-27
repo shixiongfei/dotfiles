@@ -28,7 +28,8 @@ Plug 'honza/vim-snippets'               " snippets
 Plug 'jpalardy/vim-slime'               " Slime for VIM
 Plug 'xavierd/clang_complete'           " C/C++
 Plug 'pangloss/vim-javascript'          " Javascript
-
+Plug 'davidhalter/jedi-vim'             " Python
+Plug 'vim-ruby/vim-ruby'                " Ruby
 
 " PlugInstall [name ...] [#threads]     Install plugins
 " PlugUpdate [name ...] [#threads]      Install or update plugins
