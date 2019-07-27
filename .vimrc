@@ -13,8 +13,16 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'             " improved syntax highlighting for various languages
-Plug 'joshdick/onedark.vim'
-Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'             " Atom One Dark Theme
+Plug 'itchyny/lightline.vim'            " Status Line
+Plug 'ctrlpvim/ctrlp.vim'               " Ctrl+P
+Plug 'scrooloose/nerdtree'              " NerdTree
+Plug 'Xuyuanp/nerdtree-git-plugin'      " NerdTree Git
+Plug 'luochen1990/rainbow'              " RainBow Parentheses
+Plug 'bhurlow/vim-parinfer'             " parinfer
+Plug 'cohama/lexima.vim'                " Auto close parentheses
+Plug 'xavierd/clang_complete'           " C/C++
+
 
 " PlugInstall [name ...] [#threads]     Install plugins
 " PlugUpdate [name ...] [#threads]      Install or update plugins
@@ -84,4 +92,43 @@ set scrolloff=3
 set nobackup
 set nowb
 set noswapfile
+
+" Key Map
+nnoremap <Leader>w :w<CR>
+
+" NerdTree & NerdTree Git
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+
+" RainBow Parentheses
+let g:rainbow_active=1
+
+" C/C++
+let g:clang_auto_select=1
+let g:clang_complete_macros=1
+let g:clang_complete_patterns=1
+let g:clang_complete_copen=1
+"let g:clang_periodic_quickfix=1
+let g:clang_use_library=1
+let g:clang_library_path='/usr/local/opt/llvm/lib'
+
 

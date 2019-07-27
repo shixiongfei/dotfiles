@@ -96,6 +96,7 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 
 # fix brew config warning.
@@ -129,6 +130,20 @@ noproxy () {
     unset https_proxy
     echo "HTTP(S) Proxy off"
 }
+
+# ld
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export LDFLAGS="-L/usr/local/opt/libpq/lib"
+export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+
+# cpp
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export CPPFLAGS="-I/usr/local/opt/libpq/include"
+export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+# pkg-config
+export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
+export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
 
 source $HOME/.homebrew-api-token
 
