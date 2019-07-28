@@ -97,7 +97,6 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 
 # where proxy
@@ -118,12 +117,10 @@ noproxy () {
 }
 
 # ld
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export LDFLAGS="-L/usr/local/opt/libpq/lib"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 
 # cpp
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export CPPFLAGS="-I/usr/local/opt/libpq/include"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 
