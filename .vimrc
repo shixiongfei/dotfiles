@@ -146,7 +146,7 @@ let g:slime_default_config = {"socket_name":"default", "target_pane":"{right-of}
 let g:slime_dont_ask_default = 1
 let g:slime_paste_file = "$HOME/.slime_paste"
 
-" C/C++
+" C/C++ (智能提示：任意模式<C-x><C-u> 或 插入模式<C-n>)
 let g:clang_auto_select = 1
 let g:clang_complete_macros = 1
 let g:clang_complete_patterns = 1
