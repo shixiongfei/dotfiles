@@ -14,6 +14,7 @@ My dotfiles
 
 ### Windows
 
+    mklink /D pip dotfiles\.pip
+    mklink pip\pip.ini dotfiles\.pip\pip.conf
     mklink .vimrc dotfiles\.vimrc
-    mklink /D .pip dotfiles\.pip 
     mklink /D .emacs.d dotfiles\.emacs.d\
