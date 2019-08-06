@@ -98,7 +98,6 @@ export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 
 # where proxy
 proxy () {
@@ -139,6 +138,4 @@ alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
-
-eval "$(rbenv init -)"
 
