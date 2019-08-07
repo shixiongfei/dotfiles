@@ -99,6 +99,10 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 
+if [ -d $HOME/Library/Python/3.7/bin ]; then
+  export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+fi
+
 # where proxy
 proxy () {
     export https_proxy=http://127.0.0.1:9090
