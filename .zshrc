@@ -140,7 +140,6 @@ source $HOME/.homebrew-api-token
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-alias ctags="`brew --prefix`/bin/ctags"
 alias vi="vim"
 alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
