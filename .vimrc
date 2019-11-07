@@ -63,7 +63,7 @@ let base16colorspace = 256              " Access colors present in 256 colorspac
 colorscheme zenburn
 
 let g:lightline = {
-  \ 'colorscheme': 'zenburn',
+  \ 'colorscheme': 'one',
   \ }
 
 " setting for VIM
