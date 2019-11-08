@@ -30,6 +30,7 @@ Plug 'xavierd/clang_complete'           " C/C++
 Plug 'pangloss/vim-javascript'          " Javascript
 Plug 'davidhalter/jedi-vim'             " Python
 Plug 'wlangstroth/vim-racket'           " Racket
+Plug 'wakatime/vim-wakatime'            " WakaTime
 
 " PlugInstall [name ...] [#threads]     Install plugins
 " PlugUpdate [name ...] [#threads]      Install or update plugins
