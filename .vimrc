@@ -160,7 +160,12 @@ let g:clang_complete_copen = 1
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'ultisnips'
 let g:clang_use_library = 1
-let g:clang_library_path = '/usr/local/opt/llvm/lib'
+
+let s:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
+
+if isdirectory(s:clang_library_path)
+  let g:clang_library_path = s:clang_library_path
+endif
 
 " Javascript
 let g:javascript_plugin_jsdoc = 1

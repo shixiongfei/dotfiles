@@ -98,6 +98,7 @@ export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 export PATH="$HOME/.luarocks/bin:$PATH"
 
@@ -126,16 +127,19 @@ noproxy () {
 export LDFLAGS="-L/usr/local/opt/libpq/lib"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
+export LDFLAGS="-L/usr/local/opt/qt/lib"
 
 # cpp
 export CPPFLAGS="-I/usr/local/opt/libpq/include"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
+export CPPFLAGS="-I/usr/local/opt/qt/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
+export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
 
 source $HOME/.homebrew-api-token
 
