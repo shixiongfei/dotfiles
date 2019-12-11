@@ -25,17 +25,11 @@ Plug 'bhurlow/vim-parinfer'               " parinfer
 Plug 'cohama/lexima.vim'                  " Auto close parentheses
 Plug 'SirVer/ultisnips'                   " The ultimate snippet solution for Vim
 Plug 'honza/vim-snippets'                 " snippets
-"Plug 'jpalardy/vim-slime'                 " Slime for VIM
+Plug 'jpalardy/vim-slime'                 " Slime for VIM
 Plug 'xavierd/clang_complete'             " C/C++
 Plug 'pangloss/vim-javascript'            " Javascript
 Plug 'davidhalter/jedi-vim'               " Python
-"Plug 'wlangstroth/vim-racket'             " Racket
 Plug 'tbastos/vim-lua'                    " Lua
-Plug 'vim-erlang/vim-erlang-runtime'      " Erlang Runtime
-Plug 'vim-erlang/vim-erlang-compiler'     " Erlang Compiler
-Plug 'vim-erlang/vim-erlang-omnicomplete' " Erlang Omnicomplete
-Plug 'vim-erlang/vim-erlang-tags'         " Erlang Tags
-Plug 'elixir-editors/vim-elixir'          " Elixir
 Plug 'wakatime/vim-wakatime'              " WakaTime
 
 " PlugInstall [name ...] [#threads]       Install plugins
@@ -146,10 +140,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Slime
-"let g:slime_target = "tmux"
-"let g:slime_default_config = {"socket_name":"default", "target_pane":"{right-of}"}
-"let g:slime_dont_ask_default = 1
-"let g:slime_paste_file = "$HOME/.slime_paste"
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name":"default", "target_pane":"{right-of}"}
+let g:slime_dont_ask_default = 1
+let g:slime_paste_file = "$HOME/.slime_paste"
 
 " C/C++ (智能提示：任意模式<C-x><C-u> 或 插入模式<C-n>)
 let g:clang_auto_select = 1
