@@ -99,6 +99,7 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
+export PATH="/usr/local/opt/gambit-scheme/current/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 export PATH="$HOME/.luarocks/bin:$PATH"
 
@@ -128,12 +129,14 @@ export LDFLAGS="-L/usr/local/opt/libpq/lib"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
 export LDFLAGS="-L/usr/local/opt/qt/lib"
+export LDFLAGS="-L/usr/local/opt/gambit-scheme/current/lib"
 
 # cpp
 export CPPFLAGS="-I/usr/local/opt/libpq/include"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
 export CPPFLAGS="-I/usr/local/opt/qt/include"
+export CPPFLAGS="-I/usr/local/opt/gambit-scheme/current/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
@@ -151,4 +154,5 @@ alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
 unalias gst
+unalias gsi
 
