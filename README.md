@@ -11,6 +11,7 @@ My dotfiles
     ln -s ~/.dotfiles/.pip ~/.pip
     ln -s ~/.dotfiles/.vimrc ~/.vimrc
     ln -s ~/.dotfiles/.emacs.d ~/.emacs.d
+    ln -s ~/.dotfiles/.guile ~/.guile
 
 ### Windows
 
