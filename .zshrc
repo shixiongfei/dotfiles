@@ -100,7 +100,6 @@ export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
-export PATH="$HOME/.luarocks/bin:$PATH"
 
 if [ -d $HOME/Library/Python/3.7/bin ]; then
   export PATH="$HOME/Library/Python/3.7/bin:$PATH"
