@@ -30,9 +30,6 @@ Plug 'xavierd/clang_complete'             " C/C++
 Plug 'pangloss/vim-javascript'            " Javascript
 Plug 'davidhalter/jedi-vim'               " Python
 Plug 'tbastos/vim-lua'                    " Lua
-Plug 'ionide/Ionide-vim', {
-  \ 'do': 'make fsautocomplete',
-  \ }                                     " FSharp
 Plug 'wakatime/vim-wakatime'              " WakaTime
 
 " PlugInstall [name ...] [#threads]       Install plugins
