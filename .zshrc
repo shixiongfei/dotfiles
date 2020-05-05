@@ -127,7 +127,6 @@ export LDFLAGS="-L/usr/local/opt/libpq/lib"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
 export LDFLAGS="-L/usr/local/opt/qt/lib"
-export LDFLAGS="-L/usr/local/opt/guile/lib"
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
 
 # cpp
@@ -135,14 +134,12 @@ export CPPFLAGS="-I/usr/local/opt/libpq/include"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
 export CPPFLAGS="-I/usr/local/opt/qt/include"
-export CPPFLAGS="-I/usr/local/opt/guile/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/guile/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 source $HOME/.homebrew-api-token
