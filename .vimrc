@@ -29,6 +29,7 @@ Plug 'jpalardy/vim-slime'                 " Slime for VIM
 Plug 'xavierd/clang_complete'             " C/C++
 Plug 'pangloss/vim-javascript'            " Javascript
 Plug 'davidhalter/jedi-vim'               " Python
+Plug 'wlangstroth/vim-racket'             " Racket
 Plug 'tbastos/vim-lua'                    " Lua
 Plug 'wakatime/vim-wakatime'              " WakaTime
 
