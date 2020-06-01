@@ -31,10 +31,6 @@ Plug 'pangloss/vim-javascript'            " Javascript
 Plug 'davidhalter/jedi-vim'               " Python
 Plug 'wlangstroth/vim-racket'             " Racket
 Plug 'tbastos/vim-lua'                    " Lua
-Plug 'vim-erlang/vim-erlang-runtime'      " Erlang Runtime
-Plug 'vim-erlang/vim-erlang-compiler'     " Erlang Compiler
-Plug 'vim-erlang/vim-erlang-omnicomplete' " Erlang Omnicomplete
-Plug 'vim-erlang/vim-erlang-tags'         " Erlang Tags
 Plug 'wakatime/vim-wakatime'              " WakaTime
 
 " PlugInstall [name ...] [#threads]       Install plugins
