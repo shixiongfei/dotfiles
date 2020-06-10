@@ -107,8 +107,8 @@ fi
 
 # where proxy
 proxy () {
-    export https_proxy=http://127.0.0.1:9090
-    export http_proxy=http://127.0.0.1:9090
+    export https_proxy=http://127.0.0.1:1087
+    export http_proxy=http://127.0.0.1:1087
     echo "HTTP(S) Proxy on"
 }
 
