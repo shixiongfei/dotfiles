@@ -147,6 +147,8 @@ source $HOME/.homebrew-api-token
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias emacs="emacs -nw"
+alias Emacs="/usr/local/bin/emacs"
 alias vi="vim"
 alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
