@@ -134,6 +134,7 @@ export CPPFLAGS="-I/usr/local/opt/libpq/include"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
 export CPPFLAGS="-I/usr/local/opt/qt/include"
+export CPPFLAGS="-I/usr/local/opt/libffi/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
