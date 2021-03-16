@@ -86,6 +86,8 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export GPG_TTY=$(tty)
+
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/apr-util/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
