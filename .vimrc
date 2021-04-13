@@ -18,8 +18,6 @@ Plug 'itchyny/lightline.vim'              " Status Line
 Plug 'ctrlpvim/ctrlp.vim'                 " Ctrl+P
 Plug 'tpope/vim-pathogen'                 " Pathogen
 Plug 'scrooloose/syntastic'               " Syntax checking
-Plug 'scrooloose/nerdtree'                " NerdTree
-Plug 'Xuyuanp/nerdtree-git-plugin'        " NerdTree Git
 Plug 'luochen1990/rainbow'                " RainBow Parentheses
 Plug 'bhurlow/vim-parinfer'               " parinfer
 Plug 'cohama/lexima.vim'                  " Auto close parentheses
@@ -102,29 +100,6 @@ set noswapfile
 
 " Key Map
 nnoremap <Leader>w :w<CR>
-
-" NerdTree & NerdTree Git
-nnoremap <C-n> :NERDTreeToggle<CR>
-
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-
-autocmd StdinReadPre * let s:std_in = 1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
 
 " RainBow Parentheses
 let g:rainbow_active = 1
