@@ -20,7 +20,6 @@ Plug 'tpope/vim-pathogen'                 " Pathogen
 Plug 'luochen1990/rainbow'                " RainBow Parentheses
 Plug 'bhurlow/vim-parinfer'               " parinfer
 Plug 'cohama/lexima.vim'                  " Auto close parentheses
-Plug 'wakatime/vim-wakatime'              " WakaTime
 
 " PlugInstall [name ...] [#threads]       Install plugins
 " PlugUpdate [name ...] [#threads]        Install or update plugins
