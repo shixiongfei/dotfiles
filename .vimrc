@@ -17,17 +17,9 @@ Plug 'jnurmine/Zenburn'                   " ZenBurn Theme
 Plug 'itchyny/lightline.vim'              " Status Line
 Plug 'ctrlpvim/ctrlp.vim'                 " Ctrl+P
 Plug 'tpope/vim-pathogen'                 " Pathogen
-Plug 'scrooloose/syntastic'               " Syntax checking
 Plug 'luochen1990/rainbow'                " RainBow Parentheses
 Plug 'bhurlow/vim-parinfer'               " parinfer
 Plug 'cohama/lexima.vim'                  " Auto close parentheses
-Plug 'SirVer/ultisnips'                   " The ultimate snippet solution for Vim
-Plug 'honza/vim-snippets'                 " snippets
-Plug 'jpalardy/vim-slime'                 " Slime for VIM
-Plug 'xavierd/clang_complete'             " C/C++
-Plug 'pangloss/vim-javascript'            " Javascript
-Plug 'davidhalter/jedi-vim'               " Python
-Plug 'tbastos/vim-lua'                    " Lua
 Plug 'wakatime/vim-wakatime'              " WakaTime
 
 " PlugInstall [name ...] [#threads]       Install plugins
@@ -108,35 +100,4 @@ let g:rainbow_active = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Slime
-let g:slime_target = "tmux"
-let g:slime_default_config = {"socket_name":"default", "target_pane":"{right-of}"}
-let g:slime_dont_ask_default = 1
-let g:slime_paste_file = "$HOME/.slime_paste"
-
-" C/C++ (智能提示：任意模式<C-x><C-u> 或 插入模式<C-n>)
-let g:clang_auto_select = 1
-let g:clang_complete_macros = 1
-let g:clang_complete_patterns = 1
-let g:clang_complete_copen = 1
-"let g:clang_periodic_quickfix = 1
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'ultisnips'
-let g:clang_use_library = 1
-
-let s:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
-
-if isdirectory(s:clang_library_path)
-  let g:clang_library_path = s:clang_library_path
-endif
-
-" Javascript
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_ngdoc = 1
 
