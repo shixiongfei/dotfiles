@@ -10,11 +10,9 @@ My dotfiles
     ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
     ln -s ~/.dotfiles/.pip ~/.pip
     ln -s ~/.dotfiles/.vimrc ~/.vimrc
-    ln -s ~/.dotfiles/.emacs.d ~/.emacs.d
 
 ### Windows
 
     mklink /D pip dotfiles\.pip
     mklink pip\pip.ini dotfiles\.pip\pip.conf
     mklink .vimrc dotfiles\.vimrc
-    mklink /D .emacs.d dotfiles\.emacs.d\

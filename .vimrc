@@ -13,7 +13,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'               " improved syntax highlighting for various languages
-Plug 'jnurmine/Zenburn'                   " ZenBurn Theme
+Plug 'wojciechkepka/vim-github-dark'      " Github Dark Theme
 Plug 'itchyny/lightline.vim'              " Status Line
 Plug 'ctrlpvim/ctrlp.vim'                 " Ctrl+P
 Plug 'tpope/vim-pathogen'                 " Pathogen
@@ -49,8 +49,9 @@ endif
 
 let base16colorspace = 256                " Access colors present in 256 colorspace
 
-" setting for zenburn theme & lightline
-colorscheme zenburn
+" setting for github dark theme & lightline
+colorscheme ghdark
+let g:gh_color = "soft"
 
 let g:lightline = {
   \ 'colorscheme': 'one',
