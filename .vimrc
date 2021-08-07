@@ -54,7 +54,7 @@ colorscheme ghdark
 let g:gh_color = "soft"
 
 let g:lightline = {
-  \ 'colorscheme': 'one',
+  \ 'colorscheme': 'wombat',
   \ }
 
 " setting for VIM
