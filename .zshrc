@@ -29,7 +29,7 @@ ZSH_THEME="lambda"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -149,7 +149,6 @@ source $HOME/.homebrew-api-token
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias emacs="emacs -nw"
-alias Emacs="/usr/local/bin/emacs"
 alias vi="vim"
 alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
