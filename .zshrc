@@ -102,7 +102,6 @@ export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="/usr/local/opt/gambit-scheme/current/bin:$PATH"
 export PATH="`gem env home`/bin:$PATH"
 
 # where proxy
@@ -128,7 +127,6 @@ export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
 export LDFLAGS="-L/usr/local/opt/qt/lib"
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export LDFLAGS="-L/usr/local/opt/gambit-scheme/current/lib"
 
 # cpp
 export CPPFLAGS="-I/usr/local/opt/libpq/include"
@@ -137,7 +135,6 @@ export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
 export CPPFLAGS="-I/usr/local/opt/qt/include"
 export CPPFLAGS="-I/usr/local/opt/libffi/include"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-export CPPFLAGS="-I/usr/local/opt/gambit-scheme/current/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
@@ -158,6 +155,4 @@ alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
-unalias gst
-unalias gsi
 
