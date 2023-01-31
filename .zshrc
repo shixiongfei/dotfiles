@@ -121,6 +121,8 @@ noproxy () {
     echo "HTTP(S) Proxy off"
 }
 
+export HOMEBREW_NO_INSTALL_FROM_API=1
+
 # ld
 export LDFLAGS="-L/usr/local/opt/libpq/lib"
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
