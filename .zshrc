@@ -102,10 +102,10 @@ export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="`gem env home`/bin:$PATH"
+export PATH="$(gem env home)/bin:$PATH"
 
 # where proxy
-proxy () {
+proxy() {
     export https_proxy=http://127.0.0.1:1087
     export http_proxy=http://127.0.0.1:1087
     echo "HTTP(S) Proxy on"
@@ -115,7 +115,7 @@ proxy () {
 proxy
 
 # where noproxy
-noproxy () {
+noproxy() {
     unset http_proxy
     unset https_proxy
     echo "HTTP(S) Proxy off"
@@ -129,6 +129,7 @@ export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
 export LDFLAGS="-L/usr/local/opt/qt/lib"
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
+export LDFLAGS="-L/usr/local/opt/openblas/lib"
 
 # cpp
 export CPPFLAGS="-I/usr/local/opt/libpq/include"
@@ -137,6 +138,7 @@ export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
 export CPPFLAGS="-I/usr/local/opt/qt/include"
 export CPPFLAGS="-I/usr/local/opt/libffi/include"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export CPPFLAGS="-I/usr/local/opt/openblas/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
@@ -145,6 +147,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 export PKG_CONFIG_PATH=$(brew --prefix openssl)/lib/pkgconfig
+export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
 
 source $HOME/.homebrew-api-token
 
@@ -158,5 +161,4 @@ alias python="python3"
 alias pip="pip3"
 
 # opam configuration
-[[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
+[[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh >/dev/null 2>/dev/null
