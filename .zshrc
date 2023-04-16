@@ -159,6 +159,3 @@ alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
-
-# opam configuration
-[[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh >/dev/null 2>/dev/null
