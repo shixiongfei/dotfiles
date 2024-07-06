@@ -103,6 +103,7 @@ export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/gambit-scheme/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
 
 # where proxy
@@ -132,6 +133,7 @@ export LDFLAGS="-L/usr/local/opt/qt/lib"
 export LDFLAGS="-L/usr/local/opt/libffi/lib"
 export LDFLAGS="-L/usr/local/opt/openblas/lib"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export LDFLAGS="-L/usr/local/opt/gambit-scheme/lib"
 
 # cpp
 export CPPFLAGS="-I/usr/local/opt/libpq/include"
@@ -142,6 +144,7 @@ export CPPFLAGS="-I/usr/local/opt/libffi/include"
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 export CPPFLAGS="-I/usr/local/opt/openblas/include"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export CPPFLAGS="-I/usr/local/opt/gambit-scheme/include"
 
 # pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
@@ -163,3 +166,5 @@ alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
+unalias gst
+unalias gsi
