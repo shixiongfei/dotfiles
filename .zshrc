@@ -153,6 +153,8 @@ export PKG_CONFIG_PATH=$(brew --prefix openssl)/lib/pkgconfig
 export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
+export JAVA_HOME="/usr/local/opt/openjdk"
+
 source $HOME/.homebrew-api-token
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
