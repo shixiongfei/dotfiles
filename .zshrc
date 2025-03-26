@@ -154,6 +154,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 export JAVA_HOME="/usr/local/opt/openjdk"
+export GROOVY_HOME="/usr/local/opt/groovy/libexec"
 
 source $HOME/.homebrew-api-token
 
