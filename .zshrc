@@ -89,6 +89,7 @@ export EDITOR='vim'
 export GPG_TTY=$(tty)
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/apr-util/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/net-snmp/bin:$PATH"
