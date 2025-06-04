@@ -159,6 +159,7 @@ source $HOME/.homebrew-api-token
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
+export GOPROXY="https://goproxy.cn,direct"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
