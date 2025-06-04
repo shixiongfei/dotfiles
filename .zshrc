@@ -150,7 +150,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
-export PKG_CONFIG_PATH=$(brew --prefix openssl)/lib/pkgconfig
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
