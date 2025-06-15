@@ -105,8 +105,6 @@ noproxy() {
     echo "HTTP(S) Proxy off"
 }
 
-export HOMEBREW_NO_INSTALL_FROM_API=1
-
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
 export GOPROXY="https://goproxy.cn,direct"
@@ -118,6 +116,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
 export PATH="$GOBIN:$PATH"
 
+export HOMEBREW_NO_INSTALL_FROM_API=1
 source $HOME/.homebrew-api-token
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
