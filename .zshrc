@@ -88,24 +88,6 @@ export EDITOR='vim'
 
 export GPG_TTY=$(tty)
 
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/apr-util/bin:$PATH"
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="/usr/local/opt/net-snmp/bin:$PATH"
-export PATH="/usr/local/opt/net-snmp/sbin:$PATH"
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="/usr/local/opt/unzip/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
-export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
-export PATH="/usr/local/opt/qt/bin:$PATH"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$(gem env home)/bin:$PATH"
-
 # where proxy
 proxy() {
     export https_proxy=http://127.0.0.1:1087
@@ -125,41 +107,18 @@ noproxy() {
 
 export HOMEBREW_NO_INSTALL_FROM_API=1
 
-# ld
-export LDFLAGS="-L/usr/local/opt/libpq/lib"
-export LDFLAGS="-L/usr/local/opt/sqlite/lib"
-export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
-export LDFLAGS="-L/usr/local/opt/qt/lib"
-export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export LDFLAGS="-L/usr/local/opt/openblas/lib"
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-
-# cpp
-export CPPFLAGS="-I/usr/local/opt/libpq/include"
-export CPPFLAGS="-I/usr/local/opt/sqlite/include"
-export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
-export CPPFLAGS="-I/usr/local/opt/qt/include"
-export CPPFLAGS="-I/usr/local/opt/libffi/include"
-export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-export CPPFLAGS="-I/usr/local/opt/openblas/include"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
-
-# pkg-config
-export PKG_CONFIG_PATH="/usr/local/opt/libpq/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
-export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
-
-source $HOME/.homebrew-api-token
-
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
-export PATH="$GOBIN:$PATH"
 export GOPROXY="https://goproxy.cn,direct"
+
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$(gem env home)/bin:$PATH"
+export PATH="$GOBIN:$PATH"
+
+source $HOME/.homebrew-api-token
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
