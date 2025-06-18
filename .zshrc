@@ -109,7 +109,7 @@ export JAVA_HOME="/usr/local/opt/openjdk"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
 
