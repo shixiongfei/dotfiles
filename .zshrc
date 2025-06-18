@@ -105,10 +105,6 @@ noproxy() {
     echo "HTTP(S) Proxy off"
 }
 
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export GOPROXY="https://goproxy.cn,direct"
-
 export JAVA_HOME="/usr/local/opt/openjdk"
 
 export PATH="/usr/local/sbin:$PATH"
@@ -116,7 +112,6 @@ export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
-export PATH="$GOBIN:$PATH"
 
 export HOMEBREW_NO_INSTALL_FROM_API=1
 source $HOME/.homebrew-api-token
