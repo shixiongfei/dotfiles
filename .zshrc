@@ -105,18 +105,10 @@ noproxy() {
     echo "HTTP(S) Proxy off"
 }
 
-export JAVA_HOME="/usr/local/opt/openjdk"
-
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
-export GOPROXY="https://goproxy.cn,direct"
-
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
-export PATH="$GOBIN:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 export HOMEBREW_NO_INSTALL_FROM_API=1
 source $HOME/.homebrew-api-token
@@ -128,4 +120,4 @@ alias tmux="tmux -2"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
-alias docker="podman"
+
