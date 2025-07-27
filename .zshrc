@@ -90,8 +90,8 @@ export GPG_TTY=$(tty)
 
 # where proxy
 proxy() {
-    export https_proxy=http://127.0.0.1:1087
-    export http_proxy=http://127.0.0.1:1087
+    export https_proxy=http://127.0.0.1:10808
+    export http_proxy=http://127.0.0.1:10808
     echo "HTTP(S) Proxy on"
 }
 
