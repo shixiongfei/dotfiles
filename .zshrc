@@ -109,6 +109,9 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
 
+export PUB_HOSTED_URL="https://pub.flutter-io.cn"
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+
 export HOMEBREW_NO_INSTALL_FROM_API=1
 source $HOME/.homebrew-api-token
 
