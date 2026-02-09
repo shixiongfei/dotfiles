@@ -88,10 +88,12 @@ export EDITOR='vim'
 
 export GPG_TTY=$(tty)
 
+export NO_PROXY="localhost,127.0.0.1,::1"
+
 # where proxy
 proxy() {
-    export https_proxy=http://127.0.0.1:10808
-    export http_proxy=http://127.0.0.1:10808
+    export https_proxy="http://127.0.0.1:10808"
+    export http_proxy="http://127.0.0.1:10808"
     echo "HTTP(S) Proxy on"
 }
 
