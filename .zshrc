@@ -111,11 +111,13 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
 
-export PUB_HOSTED_URL="https://pub.flutter-io.cn"
-export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
+export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 
 export HOMEBREW_NO_INSTALL_FROM_API=1
 source $HOME/.homebrew-api-token
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
