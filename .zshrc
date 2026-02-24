@@ -114,8 +114,9 @@ export PATH="$(gem env home)/bin:$PATH"
 export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
 export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 
-export HOMEBREW_NO_INSTALL_FROM_API=1
 source $HOME/.homebrew-api-token
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
