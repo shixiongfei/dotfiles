@@ -111,6 +111,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
 
+export CFLAGS="-I$(brew --prefix)/include"
+export CPPFLAGS="-I$(brew --prefix)/include"
+export LDFLAGS="-L$(brew --prefix)/lib"
+
 source $HOME/.homebrew-api-token
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
