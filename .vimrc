@@ -89,17 +89,7 @@ set nowb
 set noswapfile
 
 " Key Map
-nnoremap <C-a> ^
-nnoremap <C-e> $
 nnoremap <Leader>w :w<CR>
-nnoremap <Leader>a ggvG
-nnoremap <Leader>c yyp
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>
-inoremap <C-a> <Esc>I
-inoremap <C-e> <Esc>A
 
 " RainBow Parentheses
 let g:rainbow_active = 1
@@ -108,4 +98,3 @@ let g:rainbow_active = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
