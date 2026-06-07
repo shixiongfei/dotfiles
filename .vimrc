@@ -19,6 +19,10 @@ Plug 'tpope/vim-pathogen'                 " Pathogen
 Plug 'luochen1990/rainbow'                " RainBow Parentheses
 Plug 'bhurlow/vim-parinfer'               " parinfer
 Plug 'cohama/lexima.vim'                  " Auto close parentheses
+Plug 'Lokaltog/vim-easymotion'            " EasyMotion
+Plug 'tpope/vim-surround'                 " Surround
+Plug 'tpope/vim-commentary'               " Commentary
+Plug 'preservim/nerdtree'                 " NERDTree
 
 " PlugInstall [name ...] [#threads]       Install plugins
 " PlugUpdate [name ...] [#threads]        Install or update plugins
@@ -87,9 +91,11 @@ set scrolloff=3
 set nobackup
 set nowb
 set noswapfile
+set clipboard=unnamed
 
 " Key Map
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>e :NERDTreeToggle<CR>
 
 " RainBow Parentheses
 let g:rainbow_active = 1
