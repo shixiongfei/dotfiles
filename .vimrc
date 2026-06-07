@@ -96,6 +96,7 @@ set clipboard=unnamed
 " Key Map
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>e :NERDTreeToggle<CR>
+nnoremap <Leader>t :botright vert term<CR>
 
 " RainBow Parentheses
 let g:rainbow_active = 1
