@@ -23,6 +23,9 @@ Plug 'Lokaltog/vim-easymotion'            " EasyMotion
 Plug 'tpope/vim-surround'                 " Surround
 Plug 'tpope/vim-commentary'               " Commentary
 Plug 'preservim/nerdtree'                 " NERDTree
+Plug 'michaeljsmith/vim-indent-object'    " indent text object
+Plug 'bkad/CamelCaseMotion'               " CamelCaseMotion
+Plug 'wellle/targets.vim'                 " provides additional text objects
 
 " PlugInstall [name ...] [#threads]       Install plugins
 " PlugUpdate [name ...] [#threads]        Install or update plugins
@@ -94,9 +97,9 @@ set noswapfile
 set clipboard=unnamed
 
 " Key Map
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>e :NERDTreeToggle<CR>
-nnoremap <Leader>t :botright vert term<CR>
+nnoremap <Leader>bs :w<CR>
+nnoremap <Leader>on :NERDTreeToggle<CR>
+nnoremap <Leader>ot :botright vert term<CR>
 
 " RainBow Parentheses
 let g:rainbow_active = 1
