@@ -63,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export EDITOR='vim'
+export EDITOR='zed --wait'
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -131,4 +131,3 @@ alias make="gmake"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
-
