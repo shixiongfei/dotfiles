@@ -41,6 +41,7 @@
     },
   },
   "proxy": "http://127.0.0.1:10808",
+  "format_on_save": "on",
   "tab_size": 2,
   "disable_ai": true,
   "project_panel": {
