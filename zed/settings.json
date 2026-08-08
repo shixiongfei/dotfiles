@@ -7,31 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "lsp": {
-    "tailwindcss-language-server": {
-      "settings": {
-        "includeLanguages": {
-          "elixir": "html",
-          "heex": "html",
-        },
-        "experimental": {
-          "classRegex": ["class=\"([^\"]*)\"", "class='([^']*)'"],
-        },
-      },
-    },
-  },
   "languages": {
     "CSS": {
       "language_servers": [
         "tailwindcss-intellisense-css",
         "!vscode-css-language-server",
-      ],
-    },
-    "Elixir": {
-      "language_servers": [
-        "elixir-ls",
-        "tailwindcss-language-server",
-        "emmet-language-server",
       ],
     },
   },

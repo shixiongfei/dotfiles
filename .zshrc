@@ -121,9 +121,6 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 
-export HEX_MIRROR="https://hexpm.upyun.com"
-export HEX_CDN="https://hexpm.upyun.com"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 alias vi="vim"
@@ -131,3 +128,4 @@ alias make="gmake"
 alias libtoolize="glibtoolize"
 alias python="python3"
 alias pip="pip3"
+
