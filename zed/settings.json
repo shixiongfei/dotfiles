@@ -21,6 +21,7 @@
     },
   },
   "inlay_hints": {
+    "show_type_hints": false,
     "enabled": true,
   },
   "proxy": "http://127.0.0.1:10808",
