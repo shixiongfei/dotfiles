@@ -110,6 +110,7 @@ noproxy() {
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
+export PATH="$(brew --prefix rustup)/bin:$PATH"
 
 export CFLAGS="-I$(brew --prefix)/include"
 export CPPFLAGS="-I$(brew --prefix)/include"
