@@ -113,6 +113,9 @@ export PATH="$(gem env home)/bin:$PATH"
 export PATH="$(brew --prefix rustup)/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME/bin:$PATH"
+
 export CFLAGS="-I$(brew --prefix)/include"
 export CPPFLAGS="-I$(brew --prefix)/include"
 export LDFLAGS="-L$(brew --prefix)/lib"
