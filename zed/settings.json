@@ -40,4 +40,5 @@
     "light": "One Light",
     "dark": "One Dark",
   },
+  "base_keymap": "Emacs",
 }
