@@ -122,12 +122,7 @@ export CPPFLAGS="-I$(brew --prefix)/include"
 export LDFLAGS="-L$(brew --prefix)/lib"
 
 source $HOME/.homebrew-api-token
-export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
-export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
-export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
-export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export HOMEBREW_BREW_GIT_REMOTE="https://gh-proxy.com/https://github.com/Homebrew/brew.git"
 
 alias vi="vim"
 alias make="gmake"
