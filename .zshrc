@@ -126,6 +126,8 @@ export HOMEBREW_BREW_GIT_REMOTE="https://gh-proxy.com/https://github.com/Homebre
 export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
+export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
+
 alias vi="vim"
 alias make="gmake"
 alias libtoolize="glibtoolize"
