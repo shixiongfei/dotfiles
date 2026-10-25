@@ -107,7 +107,7 @@ noproxy() {
     echo "HTTP(S) Proxy off"
 }
 
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
 export PATH="$(brew --prefix python)/bin:$PATH"
 export PATH="$(brew --prefix ruby)/bin:$PATH"
 export PATH="$(gem env home)/bin:$PATH"
