@@ -63,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export EDITOR='zed --wait'
+export EDITOR='vim'
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -123,6 +123,8 @@ export LDFLAGS="-L$(brew --prefix)/lib"
 
 source $HOME/.homebrew-api-token
 export HOMEBREW_BREW_GIT_REMOTE="https://gh-proxy.com/https://github.com/Homebrew/brew.git"
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
 alias vi="vim"
 alias make="gmake"
